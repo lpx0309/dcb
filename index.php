@@ -24,4 +24,3 @@ if(isset($_GET['controller'])){
 	$view='default';
 	include(FILE_ROOT.'/view/'.$view.'.php');
 }
-?>
