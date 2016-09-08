@@ -16,4 +16,3 @@ define('_DB_PREFIX_', 'dcb_');
 date_default_timezone_set("Asia/Shanghai");
 //页面编码
 header("Content-Type:text/html;charset=utf-8");
-?>
