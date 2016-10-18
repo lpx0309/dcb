@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="http://static.51talk.com/images/admin/skin.css" rel="stylesheet" type="text/css" />
+    <link href="http://static.51talk.com/css/admin/right_css.css" rel="stylesheet" type="text/css" />
+    <link href="http://static.51talk.com/js/jquery.ui/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="http://static.51talk.com/js/jquery.min.js" type="text/javascript" language="javascript"></script>
+    <script src='http://static.51talk.com/js/jquery.ui/jquery-ui.min.js' type="text/javascript" language="javascript"></script>
+    <script src="http://static.51talk.com/js/WebCalendar.js" type="text/javascript" language="javascript"></script>
+    <script>
+        function validate() {
+            var start_time = $('#start_time').val();
+            var end_time = $('#end_time').val();
+            if(!start_time){
+                alert('请输入开始时间！');
+                return false;
+            }
+            if(!end_time){
+                end_time = '2016-10-18';
+            }
+            alert('开始时间是：'start_time+'结束时间是：'+end_time);
+        }
+    </script>
+</head>
+<body>
+    开始时间：<input type="text" id="start_time" onclick="SelectDate(this)" value="2016-10-18">
+    结束时间：<input type="text" id="end_time" onclick="SelectDate(this)" value="2016-10-18">
+    <button onclick="validate()">确定</button>
+</body>
+</html>
