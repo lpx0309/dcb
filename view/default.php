@@ -7,7 +7,7 @@ if(isset($_GET['kw'])){
 //排序
 if(isset($_GET['st'])){
 	$od=explode('_',$_GET['st']);
-	$od=$or[0];
+	$od=$od[0];
 	$by=explode('_',$_GET['st']);
 	$by=$by[1];
 }else{
