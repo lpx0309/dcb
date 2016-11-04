@@ -101,7 +101,7 @@ $title='历史记录';
 				<td><?php echo $dcb['id']; ?></a></td>
 				<td><?php echo $dcb['time']; ?></td>
 				<td><?php echo $dcb['code']; ?></td>
-				<td><?php dc($dcb['dcb']); ?></td>
+				<td><?php echo $dcb['dcb'];//dc($dcb['dcb']); ?></td>
 				<td><?php echo $dcb['sales']; ?></td>
 				<td><?php echo $dcb['first']; ?></td>
 				<td><?php echo $dcb['second']; ?></td>
