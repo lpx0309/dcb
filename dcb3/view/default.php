@@ -47,6 +47,94 @@ $title='历史记录';
 
 <?php require(FILE_ROOT.'/view/header.php'); ?>
 
+<script type="text/javascript">
+	$(function(){
+
+
+	});
+
+	function update(){
+		$.ajax({
+			url:'index.php?controller=model&model=dcb&function=update&time='+ new Date().getTime(),
+			data:'',
+			type:'POST',
+			async:true,
+			beforeSend: function(){
+				pop_loading();
+			},
+			success: function(text){
+				pop_loading_close();
+				if(text){
+					pop_alert(text);
+					console.log(text);
+				}else{
+					window.location.reload();
+				}
+			}
+		});
+	}
+	function alldcb(){
+		$.ajax({
+			url:'index.php?controller=model&model=dcb&function=alldcb&time='+ new Date().getTime(),
+			data:'',
+			type:'POST',
+			async:true,
+			beforeSend: function(){
+				pop_loading();
+			},
+			success: function(text){
+				pop_loading_close();
+				if(text){
+					alert(text);
+					console.log(text);
+				}else{
+					window.location.reload();
+				}
+			}
+		});
+	}
+	function del(){
+		$.ajax({
+			url:'index.php?controller=model&model=dcb&function=del&time='+ new Date().getTime(),
+			data:'delnum='+$('#delnum').val(),
+			type:'POST',
+			async:true,
+			beforeSend: function(){
+				pop_loading();
+			},
+			success: function(text){
+				pop_loading_close();
+				if(text){
+					alert(text);
+					console.log(text);
+				}else{
+					window.location.reload();
+				}
+			}
+		});
+	}
+	function trunset(){
+		$.ajax({
+			url:'index.php?controller=model&model=dcb&function=trunset&time='+ new Date().getTime(),
+			data:'',
+			type:'POST',
+			async:true,
+			beforeSend: function(){
+				pop_loading();
+			},
+			success: function(text){
+				pop_loading_close();
+				if(text){
+					alert(text);
+					console.log(text);
+				}else{
+					window.location.reload();
+				}
+			}
+		});
+	}
+</script>
+
 <style>
 #banner{
 	margin-bottom:20px;
@@ -130,93 +218,5 @@ $title='历史记录';
     </nav>
   </div>
 </div>
-
-<script type="text/javascript">
-$(function(){
-		   
-		   
-});
-
-function update(){
-	$.ajax({
-		url:'index.php?controller=model&model=dcb&function=update&time='+ new Date().getTime(),
-		data:'',
-		type:'POST',
-		async:true,
-		beforeSend: function(){
-			pop_loading();
-		},
-		success: function(text){
-			pop_loading_close();
-			if(text){
-				pop_alert(text);
-				console.log(text);
-			}else{
-				window.location.reload();
-			}
-		}
-	});
-}
-function alldcb(){
-	$.ajax({
-		url:'index.php?controller=model&model=dcb&function=alldcb&time='+ new Date().getTime(),
-		data:'',
-		type:'POST',
-		async:true,
-		beforeSend: function(){
-			pop_loading();
-		},
-		success: function(text){
-			pop_loading_close();
-			if(text){
-				alert(text);
-				console.log(text);
-			}else{
-				window.location.reload();
-			}
-		}
-	});
-}
-function del(){
-	$.ajax({
-		url:'index.php?controller=model&model=dcb&function=del&time='+ new Date().getTime(),
-		data:'delnum='+$('#delnum').val(),
-		type:'POST',
-		async:true,
-		beforeSend: function(){
-			pop_loading();
-		},
-		success: function(text){
-			pop_loading_close();
-			if(text){
-				alert(text);
-				console.log(text);
-			}else{
-				window.location.reload();
-			}
-		}
-	});
-}
-function trunset(){
-	$.ajax({
-		url:'index.php?controller=model&model=dcb&function=trunset&time='+ new Date().getTime(),
-		data:'',
-		type:'POST',
-		async:true,
-		beforeSend: function(){
-			pop_loading();
-		},
-		success: function(text){
-			pop_loading_close();
-			if(text){
-				alert(text);
-				console.log(text);
-			}else{
-				window.location.reload();
-			}
-		}
-	});
-}
-</script>
 
 <?php require(FILE_ROOT.'/view/footer.php'); ?>

@@ -15,6 +15,12 @@
 <script type="text/javascript" src="<?php echo LINK_ROOT; ?>/js/pop_div.js"></script>
 <script type="text/javascript" src="<?php echo LINK_ROOT; ?>/js/pop_loading.js"></script>
 
+  <script type="text/javascript">
+    $(function(){
+      //$('.tabs').tabs();
+    });
+  </script>
+
 <title><?php echo $title; ?> - DCB</title>
 </head>
 
