@@ -3,13 +3,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<link type="text/css" rel="stylesheet" href="<?php echo LINK_ROOT; ?>/css/jquery-ui.min.css" />
-<link type="text/css" rel="stylesheet" href="<?php echo LINK_ROOT; ?>/css/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="http://cdn.bootcss.com/jqueryui/1.11.0/jquery-ui.min.css" />
+<link type="text/css" rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" />
 <link type="text/css" rel="stylesheet" href="<?php echo LINK_ROOT; ?>/css/pop_loading.css" />
 
-<script type="text/javascript" src="<?php echo LINK_ROOT; ?>/js/jquery.min.js"></script>
-<script type="text/javascript" src="<?php echo LINK_ROOT; ?>/js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="<?php echo LINK_ROOT; ?>/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.bootcss.com/jqueryui/1.11.0/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo LINK_ROOT; ?>/js/highcharts.js"></script>
 <script type="text/javascript" src="<?php echo LINK_ROOT; ?>/js/url.js"></script>
 <script type="text/javascript" src="<?php echo LINK_ROOT; ?>/js/pop_div.js"></script>
